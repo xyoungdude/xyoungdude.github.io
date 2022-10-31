@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Title -->
+    <script>
+        title = "𝐼'𝑚 𝑗𝑢𝑠𝑡 𝑡𝑟𝑦𝑖𝑛𝑔 𝑡𝑜 𝘩𝑒𝑙𝑝 𝑦𝑜𝑢 𝑢𝑛𝑑𝑒𝑟𝑠𝑡𝑎𝑛𝑑 𝑚𝑒 𝑏𝑒𝑡𝑡𝑒𝑟 ";
+        position = 0;
+        function scrolltitle() {
+            document.title = title.substring(position, title.length) + title.substring(0, position); 
+            position++;
+            if (position > title.length) position = 0;
+            titleScroll = window.setTimeout(scrolltitle,170);
+        }
+        scrolltitle();
+    </script>
+    <link rel="icon" href="./assets/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+    <a id="h" href="#index">
+        <img src="./assets/banner.png">
+    </a>
+
+    <div class="buttons">
+        <!-- Spotify -->
+        <a href="https://open.spotify.com/playlist/1Z7lsHh2rjZ7m150EfTgo5?si=a48a17cc8f2f48cc" target="_blank">
+            <img src="./assets/spotify.png">
+        </a>
+        <!-- Down -->
+        <a href="">
+            <img src="./assets/down.gif">
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/heen_2507/" target="_blank">
+            <img src="./assets/instagram.png">
+        </a>
+    </div>
+    </div>
+    <div class="content" id="index">
+		<a href="#" id="hide"><img src="assets/up.gif"></a>
+		<div class="flexy">
+            <!-- Greetings -->
+			<p class="sechead"><b>/greetings/</b></p>
+			<a class="cell">"Hello everyone, you can call me KIDS. This website is just for fun and a little experiment. So just enjoy looking at this website!"</a>
+            <!-- Home -->
+            <p class="sechead"><b>/home/</b></p>
+            <a class="cell" href="blog/welcome.html">Hello!</a>
+            <a class="cell" href="https://discord.gg/nzz9ms55" target="_blank">Discord</a>
+            <a class="cell" href="https://steamcommunity.com/profiles/76561198291561678/" target="_blank">Steam</a>
+            <!-- ??? -->
+            <p class="sechead"><b>/???/</b></p>
+			<a class="cell">"Love taught me not to expect from human."</a>
+            <!-- Notes -->
+            <p class="sechead"><b>/important notes/</b></p>
+			<a class="cell">"This website design is not completely made by me. But took many references from @omnidisplay please check his instagram!"</a>
+		</div>
+	</div>
+</body>
+</html>
